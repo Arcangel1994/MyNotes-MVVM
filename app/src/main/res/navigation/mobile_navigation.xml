@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_nota">
+
+    <fragment
+        android:id="@+id/navigation_nota"
+        android:name="com.example.roompatronesdiseo.ui.nota.NotaFragment"
+        android:label="@string/title_notes"
+        tools:layout="@layout/fragment_nota" />
+
+    <fragment
+        android:id="@+id/navigation_favoritas"
+        android:name="com.example.roompatronesdiseo.ui.favoritas.FavoritasFragment"
+        android:label="@string/title_favoritas"
+        tools:layout="@layout/fragment_favoritas" />
+
+    <fragment
+        android:id="@+id/navigation_perfil"
+        android:name="com.example.roompatronesdiseo.ui.perfil.PerfilFragment"
+        android:label="@string/title_user_profile"
+        tools:layout="@layout/fragment_perfil" />
+</navigation>
